@@ -1,0 +1,42 @@
+.about {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+  }
+  
+  .about-section {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    background: var(--glass-background);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: var(--glass-shadow);
+  }
+  
+  .about h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .about h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .about ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .about li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .about li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+  }

@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.hover-scale {
+  transition: transform var(--transition-duration) ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-rotate {
+  transition: transform var(--transition-duration) ease;
+}
+
+.hover-rotate:hover {
+  transform: rotate(5deg);
+}
+
+.hover-shadow {
+  transition: box-shadow var(--transition-duration) ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
