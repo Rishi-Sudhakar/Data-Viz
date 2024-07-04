@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# DataViz - Interactive Data Visualization Dashboard (STILL UNDER DEVELOPMENT)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DataViz is a powerful and visually stunning data visualization tool built with React. It transforms complex data into beautiful, interactive charts and graphs, helping users make data-driven decisions with confidence.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Interactive and responsive dashboard
+- Multiple chart types (bar, line, pie)
+- Real-time data updates
+- Customizable designs
+- Smooth animations and transitions
+- Parallax scrolling effects
+- Custom cursor animation
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- GSAP (GreenSock Animation Platform)
+- Locomotive Scroll
+- ApexCharts
+- Papa Parse (for CSV parsing)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Some Screenshots
+<img width="1552" alt="Screenshot 2024-07-04 at 10 29 49 AM" src="https://github.com/Rishi-Sudhakar/Data-Viz/assets/79398572/91e1c85e-44d5-4c71-b5e6-2120cd45b505">
+<img width="1552" alt="Screenshot 2024-07-04 at 10 30 17 AM" src="https://github.com/Rishi-Sudhakar/Data-Viz/assets/79398572/80bc830b-763b-4062-bed1-4ef9f1cfab71">
 
-### `npm test`
+### The Data visualisation part (Dashboard) is still under Development.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1552" alt="Screenshot 2024-07-04 at 10 30 42 AM" src="https://github.com/Rishi-Sudhakar/Data-Viz/assets/79398572/a763ef06-9a18-4d1f-9e8f-3fe68c156336">
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
+   ```
+   git clone https://github.com/Rishi-Sudhakar/Data-Viz.git
+   cd Data-Viz
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install the dependencies:
+   ```
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Place your data.csv file in the `public` folder.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Open your browser and visit `http://localhost:3000` to view the application. (It'll just redirect you anyway)
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+dataviz/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   ├── manifest.json
+│   └── data.csv
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Hero.js
+│   │   ├── Dashboard.js
+│   │   ├── About.js
+│   │   ├── Footer.js
+│   │   └── CustomCursor.js
+│   ├── styles/
+│   │   ├── App.css
+│   │   ├── Header.css
+│   │   ├── Hero.css
+│   │   ├── Dashboard.css
+│   │   ├── About.css
+│   │   ├── Footer.css
+│   │   └── CustomCursor.css
+│   ├── utils/
+│   │   └── chartConfigs.js
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Customization
 
-### Code Splitting
+- To modify the color scheme, edit the CSS variables in `src/styles/App.css`.
+- To add or modify charts, update the `src/components/Dashboard.js` file and the chart configurations in `src/utils/chartConfigs.js`.
+- To change the content of the About section, edit the `src/components/About.js` file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment
 
-### Analyzing the Bundle Size
+To build the project for production, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+npm run build
+```
 
-### Making a Progressive Web App
+This will create a `build` folder with optimized production-ready files that you can deploy to your hosting provider. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgements
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://reactjs.org/)
+- [GSAP](https://greensock.com/gsap/)
+- [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/)
+- [ApexCharts](https://apexcharts.com/)
+- [Papa Parse](https://www.papaparse.com/)
